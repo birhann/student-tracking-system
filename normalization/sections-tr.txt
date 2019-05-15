@@ -1,0 +1,32 @@
+KULLANICI BÖLÜMÜ
+	--ÖÐRETÝM GÖREVLÝSÝ
+*Profil resmi, *Adý - Soyadý, *Kullanýcý Adý, *E-Posta Adresi
+	*Sorumlu Olduðu Ders ve O Dersi Alan Sýnýflar
+	*Veri Giriþi Ýçin Yetkilendirilen Baþka Kullanýcýlar ve (Ne Ýþe Yarar Bölümü)
+	
+DERS BÖLÜMÜ – dersler- sýnýflar tablosu
+	*Bölüm Ýsmi ,*Ders Ýsimleri ve Ders Tanýmý
+	*Dersi Alan Sýnýfýn veya Sýnýflarýn Listesi
+*dersin kodu -kredisi-aktsi
+	*Dersi Alan Öðrencilerin Listesi, *Sýnýfýn Vize Ortalamasý, *Sýnýf Final Ortalamasý, 
+	*Ders Vize En Yüksek Alan Kiþi | Kiþiler ve (Tebrik Maili Gönderim Bölümü)
+*Ders Vize En Düþük Alan Kiþi.
+*Ders Final En Yüksek Alan Kiþi | Kiþiler ve (Tebrik Maili Gönderim Bölümü)
+*Ders Final En Düþük Alan Kiþi.
+	
+YOKLAMA BÖLÜMÜ
+*Bölüm Ýsmi, *Sýnýf Ýsimleri
+*Sýnýf Listesi ve Yoklama Tarihi (Haftasý)
+*Devamsýzlýk Günlerinde ki Mazeret Bilgisi
+*Devamsýzlýðý Sýnýrda Olan Öðrenciler ve Uyarý Maili Gönderim Bölümü
+	
+ÖÐRENCÝ DETAY BÖLÜMÜ
+	*Öðrenci Foto,*Ad-Soyad,*Doðum Tarihi,*Cinsiyet
+	*Öðrenci Ýletiþim Bilgisi(Adres Bilgisi, Mail Adresi, Telefon)
+	*Öðrenci No,
+
+
+	*Öðrencinin Kayýtlý Vize ve Final Notlarý.
+	*Öðrencinin Kayýtlý Devamsýzlýk Bilgileri
+	*Öðrenci Projeleri ve Ders Ýçi Etkinliði Ýle Alakalý Notlar Bölümü
+	
