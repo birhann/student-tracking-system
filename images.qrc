@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="images">
+    <file>images/ballon.jpg</file>
+    <file>images/main_background.jpg</file>
+    <file>images/warning_back.png</file>
+    <file>images/warning_back2.png</file>
+    <file>images/warning_icon.png</file>
+    <file>images/yu_ana_logo.png</file>
+    <file>images/yu_ana_logo2.png</file>
+    <file>images/yu_icon.png</file>
+    <file>images/yu_Icon2.png</file>
+    <file>images/yu_logo-tek1.png</file>
+    <file>images/yu_logo-tek2.png</file>
+  </qresource>
+</RCC>
