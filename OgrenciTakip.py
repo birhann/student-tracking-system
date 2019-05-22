@@ -67,9 +67,9 @@ class ogrenciTakip(QMainWindow,Ui_MainWindow):
 
             ##### FOR MAİN OPERATIONS ####
             # for students
-            self.combo_edit_learners.currentTextChanged.connect(self.ogrenciSection)
-            self.combo_yerlestir_classes.currentTextChanged.connect(self.ogrenciSection)
-            self.combo_yerlestir_learners.currentTextChanged.connect(self.ogrenciSection)
+            self.combo_edit_learners.activated.connect(self.ogrenciSection)
+            self.combo_yerlestir_classes.activated.connect(self.ogrenciSection)
+            self.combo_yerlestir_learners.activated.connect(self.ogrenciSection)
             self.btn_ogrenciEkle.clicked.connect(self.ogrenciSection)
             self.btn_ogrenciDuzenle.clicked.connect(self.ogrenciSection)
             self.btn_ogrenciSil.clicked.connect(self.ogrenciSection)
