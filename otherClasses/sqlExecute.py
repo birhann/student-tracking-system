@@ -51,22 +51,22 @@ class sqlExecute():
         query="UPDATE `students` SET `ad`='{}',`soyad`='{}',`dogum_tarihi`='{}',`cinsiyet`='{}',`ev_adresi`='{}',`mail_adresi`='{}',`telefon`='{}' WHERE ogrenci_no={}"
         self.run_execute(query.format(newLearnerInfo['ad'],newLearnerInfo['soyad'],newLearnerInfo['dogum_tarihi'],newLearnerInfo['cinsiyet'],newLearnerInfo['ev_adresi'],newLearnerInfo['mail_adresi'],newLearnerInfo['telefon'],newLearnerInfo['ogrenci_no']))
     def theLearnerDelete(self,theLearnerNumber):
+        learnerId=self.fetch_execute("select `ogrenci_id` from students where ogrenci_no={}".format(theLearnerNumber))[0]['ogrenci_id']
+        self.run_execute("delete from `take_lesson` where ogrenci_id={}".format(learnerId))
         self.run_execute("delete from `students` where ogrenci_no={}".format(theLearnerNumber))
     def getTheLearnerInfo(self,theLearnerNumber):
         #to get_info in section ogrenci
         return self.fetch_execute("select * from students where ogrenci_no='{}'".format(theLearnerNumber))
     def getLearnersInNoClass(self):
-        learnersInfo = self.fetch_execute("select ogrenci_id,ogrenci_no,ad,soyad from students")
-        takeLessonsId=[i['ogrenci_id'] for i in self.fetch_execute("select ogrenci_id from take_lesson")]
+        learnersId = [i['ogrenci_id'] for i in self.fetch_execute("select ogrenci_id from students")]
+        learnersIdWithClass = [i['ogrenci_id'] for i in self.fetch_execute("select ogrenci_id from take_lesson")]
+        learnersInfo=[]
+        for i in learnersId:
+            if learnersIdWithClass.count(i)<1:
+                a=self.fetch_execute("select ad,soyad,ogrenci_no from students where ogrenci_id={}".format(i))
+                learnersInfo.append(a[0]['ad']+" "+a[0]['soyad']+" "+a[0]['ogrenci_no'])
+        return learnersInfo
 
-
-        for i in learnersInfo:
-            if takeLessonsId.count(i['ogrenci_id'])>0:
-                learnersInfo.remove(i)
-        print(learnersInfo)
-
-
-        return [i['ad']+" "+i['soyad']+" "+i['ogrenci_no'] for i in learnersInfo]
     def setLearnerToEmplace(self,class_learner_info):
         ogr_id=self.fetch_execute("select ogrenci_id from students where ogrenci_no='{}'".format(class_learner_info[-1]))[0]['ogrenci_id']
         print(ogr_id,class_learner_info[0])

@@ -76,7 +76,10 @@ class ogrenciTakip(QMainWindow,Ui_MainWindow):
             self.btn_ogrenciBilgileriGetir.clicked.connect(self.ogrenciSection)
             self.btn_ogrenciYerlestir.clicked.connect(self.ogrenciSection)
             self.btn_ogrenciDersKaydi.clicked.connect(self.ogrenciSection)
-            # for leesons
+
+            self.label_yerlestir_class.hide()
+            self.label_yerlestir_learners.hide()
+            # for lessons
             self.btn_dersEkle.clicked.connect(self.dersSinifSection)
             self.btn_sinifEkle.clicked.connect(self.dersSinifSection)
 
@@ -118,7 +121,6 @@ class ogrenciTakip(QMainWindow,Ui_MainWindow):
             self.combo_yerlestir_classes.addItems(classData['code_name'])
         def setLearnerToEmplace():
             studentsData=self.sql.getLearnersInNoClass()
-            print(studentsData)
             self.combo_yerlestir_learners.clear()
             self.combo_yerlestir_learners.addItems(studentsData)
 
@@ -169,7 +171,6 @@ class ogrenciTakip(QMainWindow,Ui_MainWindow):
             if self.combo_edit_learners.currentText()!= "":
                 theLearnerNumber = self.combo_edit_learners.currentText().split(" ")[-1]
                 thelearnerInfo=(self.sql.getTheLearnerInfo(theLearnerNumber))[0]
-                print(thelearnerInfo)
                 lineEdits=[self.ogr_edit_ad,self.ogr_edit_soyad,self.ogr_edit_dogumTarihi,self.ogr_edit_telefon,self.ogr_edit_mail,self.ogr_edit_evAdresi]
                 Info=[thelearnerInfo['ad'],thelearnerInfo['soyad'],thelearnerInfo['dogum_tarihi'],thelearnerInfo['telefon'],thelearnerInfo['mail_adresi'],thelearnerInfo['ev_adresi']]
                 [a.setText(str(b)) for a,b in zip(lineEdits,Info)]
@@ -177,9 +178,10 @@ class ogrenciTakip(QMainWindow,Ui_MainWindow):
                 [i.show() for i in self.ogr_duzenle_show_hide]
             if self.combo_yerlestir_learners.currentText()!="":
                 self.label_yerlestir_learners.setText(self.combo_yerlestir_learners.currentText())
+                self.label_yerlestir_learners.show()
             if self.combo_yerlestir_classes.currentText()!="":
                 self.label_yerlestir_class.setText(self.combo_yerlestir_classes.currentText())
-
+                self.label_yerlestir_class.show()
 
 
         def ogrenciGuncelle():
@@ -231,8 +233,14 @@ class ogrenciTakip(QMainWindow,Ui_MainWindow):
             # for update widgets
             self.setInfo()
         def ogrenciYerlestir():
-            self.sql.setLearnerToEmplace([self.combo_yerlestir_classes.currentText().split(" ")[0],self.combo_yerlestir_learners.currentText().split(" ")[-1]])
-            self.setInfo()
+            if self.label_yerlestir_class.isHidden() or self.label_yerlestir_learners.isHidden():
+                warning('Lütfen Sınıf Ve Öğrenci Seçimi Yapınız').exec_()
+            else:
+                self.sql.setLearnerToEmplace([self.combo_yerlestir_classes.currentText().split(" ")[0],self.combo_yerlestir_learners.currentText().split(" ")[-1]])
+                self.setInfo()
+                self.label_yerlestir_learners.hide()
+                self.label_yerlestir_class.hide()
+                warning('Öğrenci - Sınıf Yerleştirme İşlemi Başarılı').exec_()
 
 
         sender=self.sender()
