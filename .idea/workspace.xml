@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62cd6846-82d1-4e5e-8570-e9b2deac0198" name="Default Changelist" comment="QComboBox changed signal as activated instead of CurentTextChange for error that 'list index out of range'">
-      <change beforePath="$PROJECT_DIR$/OgrenciTakip.py" beforeDir="false" afterPath="$PROJECT_DIR$/OgrenciTakip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userPickles/lastlog.pc" beforeDir="false" afterPath="$PROJECT_DIR$/userPickles/lastlog.pc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,26 +14,12 @@
     <favorites_list name="Student-Tracking-System_Ogrenci-Takip-Sistemi" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OgrenciTakip.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="69" column="40" lean-forward="true" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
-              <folding>
-                <element signature="e#3237#3623#0" />
-                <element signature="e#3656#5238#0" />
-                <element signature="e#5251#12753#0" />
-                <element signature="e#5323#5808#0" />
-                <element signature="e#7814#9006#0" />
-                <element signature="e#9053#11152#0" />
-                <element signature="e#11604#11778#0" />
-                <element signature="e#12772#16252#0" />
-                <element signature="e#16288#24729#0" />
-                <element signature="e#16404#18239#0" />
-                <element signature="e#18278#20695#0" />
-                <element signature="e#24766#24908#0" />
-              </folding>
+            <state relative-caret-position="5437">
+              <caret line="304" column="120" selection-start-line="304" selection-start-column="120" selection-end-line="304" selection-end-column="120" />
             </state>
           </provider>
         </entry>
@@ -42,13 +27,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/otherClasses/sqlExecute.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+            <state relative-caret-position="-1545">
+              <caret line="52" column="48" lean-forward="true" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
               <folding>
                 <element signature="e#430#610#0" />
                 <element signature="e#654#857#0" />
                 <element signature="e#1073#1252#0" />
                 <element signature="e#1766#2124#0" />
+                <element signature="e#2181#2596#0" />
               </folding>
             </state>
           </provider>
@@ -57,8 +43,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/otherClasses/login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
+            <state relative-caret-position="1512">
               <caret line="72" column="7" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/otherClasses/warning.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -77,9 +75,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>self.</find>
       <find>self.combo_edit_learners</find>
-      <find>update</find>
       <find>bilgileriGe</find>
       <find>(-1)</find>
       <find>isHidden</find>
@@ -107,6 +103,8 @@
       <find>print</find>
       <find>combo_edit_learners</find>
       <find>comboBoxTextChangeControl</find>
+      <find>add</find>
+      <find>update</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,13 +165,22 @@
             <path>
               <item name="Student-Tracking-System_Ogrenci-Takip-Sistemi" type="b2602c69:ProjectViewProjectNode" />
               <item name="Student-Tracking-System_Ogrenci-Takip-Sistemi" type="462c0819:PsiDirectoryNode" />
-              <item name="otherClasses" type="462c0819:PsiDirectoryNode" />
+              <item name="normalization" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Student-Tracking-System_Ogrenci-Takip-Sistemi" type="b2602c69:ProjectViewProjectNode" />
               <item name="Student-Tracking-System_Ogrenci-Takip-Sistemi" type="462c0819:PsiDirectoryNode" />
               <item name="otherClasses" type="462c0819:PsiDirectoryNode" />
-              <item name="send_email.py" type="8704e2dd:PyFileNode" />
+            </path>
+            <path>
+              <item name="Student-Tracking-System_Ogrenci-Takip-Sistemi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Student-Tracking-System_Ogrenci-Takip-Sistemi" type="462c0819:PsiDirectoryNode" />
+              <item name="subPrograms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Student-Tracking-System_Ogrenci-Takip-Sistemi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Student-Tracking-System_Ogrenci-Takip-Sistemi" type="462c0819:PsiDirectoryNode" />
+              <item name="userPickles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -356,7 +363,6 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="62cd6846-82d1-4e5e-8570-e9b2deac0198" name="Default Changelist" comment="" />
-      <changelist id="" name="main files updated" comment="" />
       <created>1556599205186</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -392,12 +398,12 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49618322" visible="true" weight="0.20343462" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49618322" visible="true" weight="0.20343462" />
       <window_info id="Structure" order="1" sideWeight="0.5038168" side_tool="true" weight="0.20343462" />
       <window_info id="Favorites" order="2" sideWeight="0.5038168" side_tool="true" weight="0.20343462" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.668428" visible="true" weight="0.04587156" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.668428" weight="0.04587156" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4266055" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -595,16 +601,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../GitHub/Todo_App/todo_app.py" />
-    <entry file="file://$PROJECT_DIR$/otherClasses/warning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Python/BETTER PYTHON/zip.py" />
     <entry file="file://$PROJECT_DIR$/subPrograms/Todo_App/todo_app.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -648,9 +644,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/OgrenciTakip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5437">
+          <caret line="304" column="120" selection-start-line="304" selection-start-column="120" selection-end-line="304" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otherClasses/sqlExecute.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1545">
+          <caret line="52" column="48" lean-forward="true" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
+          <folding>
+            <element signature="e#430#610#0" />
+            <element signature="e#654#857#0" />
+            <element signature="e#1073#1252#0" />
+            <element signature="e#1766#2124#0" />
+            <element signature="e#2181#2596#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/otherClasses/login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
+        <state relative-caret-position="1512">
           <caret line="72" column="7" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
@@ -658,36 +675,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/otherClasses/sqlExecute.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
-          <folding>
-            <element signature="e#430#610#0" />
-            <element signature="e#654#857#0" />
-            <element signature="e#1073#1252#0" />
-            <element signature="e#1766#2124#0" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/normalization/MySQL-Tables.PNG">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/OgrenciTakip.py">
+    <entry file="file://$PROJECT_DIR$/otherClasses/warning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="69" column="40" lean-forward="true" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+        <state relative-caret-position="156">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding>
-            <element signature="e#3237#3623#0" />
-            <element signature="e#3656#5238#0" />
-            <element signature="e#5251#12753#0" />
-            <element signature="e#5323#5808#0" />
-            <element signature="e#7814#9006#0" />
-            <element signature="e#9053#11152#0" />
-            <element signature="e#11604#11778#0" />
-            <element signature="e#12772#16252#0" />
-            <element signature="e#16288#24729#0" />
-            <element signature="e#16404#18239#0" />
-            <element signature="e#18278#20695#0" />
-            <element signature="e#24766#24908#0" />
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
